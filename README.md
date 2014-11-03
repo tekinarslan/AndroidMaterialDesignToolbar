@@ -17,4 +17,4 @@ Project Contain
 *ViewPager
 
 
-[İmage] (http://www.stdroid.com/public_html/img/output_Qu5SNp.gif)
+[İmage] (http://www.stdroid.com/output_Qu5SNp.gif)
