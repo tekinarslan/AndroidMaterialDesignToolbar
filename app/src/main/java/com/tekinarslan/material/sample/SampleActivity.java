@@ -56,6 +56,11 @@ public class SampleActivity extends ActionBarActivity {
         String[] values = new String[]{
             "DEFAULT","RED","BLUE","MATERIAL GREY"
         };
+
+        mDrawerList.setBackgroundColor(getResources().getColor(R.color.material_deep_teal_500));
+        toolbar.setBackgroundColor(getResources().getColor(R.color.material_deep_teal_500));
+        slidingTabLayout.setBackgroundColor(getResources().getColor(R.color.material_deep_teal_500));
+
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
             android.R.layout.simple_list_item_1, android.R.id.text1, values);
         mDrawerList.setAdapter(adapter);
