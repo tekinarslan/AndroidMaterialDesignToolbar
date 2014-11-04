@@ -23,11 +23,12 @@ public class SampleActivity extends ActionBarActivity {
 
     private ListView mDrawerList;
     ViewPager pager;
-    private String titles[] = new String[] { "Sample Tab 1" ,"Sample Tab 2" ,"Sample Tab 3" ,"Sample Tab 4"
-            ,"Sample Tab 5" ,"Sample Tab 6","Sample Tab 7" ,"Sample Tab 8"};
+    private String titles[] = new String[]{"Sample Tab 1", "Sample Tab 2", "Sample Tab 3", "Sample Tab 4"
+            , "Sample Tab 5", "Sample Tab 6", "Sample Tab 7", "Sample Tab 8"};
     private Toolbar toolbar;
 
     SlidingTabLayout slidingTabLayout;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,7 +43,7 @@ public class SampleActivity extends ActionBarActivity {
         }
         pager = (ViewPager) findViewById(R.id.viewpager);
         slidingTabLayout = (SlidingTabLayout) findViewById(R.id.sliding_tabs);
-        pager.setAdapter(new ViewPagerAdapter(getSupportFragmentManager(),titles));
+        pager.setAdapter(new ViewPagerAdapter(getSupportFragmentManager(), titles));
 
         slidingTabLayout.setViewPager(pager);
         slidingTabLayout.setCustomTabColorizer(new SlidingTabLayout.TabColorizer() {
@@ -51,18 +52,13 @@ public class SampleActivity extends ActionBarActivity {
                 return Color.WHITE;
             }
         });
-        drawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout,toolbar, R.string.app_name, R.string.app_name);
+        drawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout, toolbar, R.string.app_name, R.string.app_name);
         mDrawerLayout.setDrawerListener(drawerToggle);
         String[] values = new String[]{
-            "DEFAULT","RED","BLUE","MATERIAL GREY"
+                "DEFAULT", "RED", "BLUE", "MATERIAL GREY"
         };
-
-        mDrawerList.setBackgroundColor(getResources().getColor(R.color.material_deep_teal_500));
-        toolbar.setBackgroundColor(getResources().getColor(R.color.material_deep_teal_500));
-        slidingTabLayout.setBackgroundColor(getResources().getColor(R.color.material_deep_teal_500));
-
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
-            android.R.layout.simple_list_item_1, android.R.id.text1, values);
+                android.R.layout.simple_list_item_1, android.R.id.text1, values);
         mDrawerList.setAdapter(adapter);
         mDrawerList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
