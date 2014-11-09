@@ -1,16 +1,10 @@
 package com.tekinarslan.material.sample;
 
-import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.util.TypedValue;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.FrameLayout;
-import android.widget.FrameLayout.LayoutParams;
-import android.widget.TextView;
 
 public class SampleFragment extends Fragment {
 
@@ -27,34 +21,35 @@ public class SampleFragment extends Fragment {
     }
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-
-        position = getArguments().getInt(ARG_POSITION);
-    }
-
-    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        position = getArguments().getInt(ARG_POSITION);
+        View rootView = inflater.inflate(R.layout.page, container, false);
 
-        LayoutParams params = new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT);
+        ProgressBarCircular progressBarCircular = (ProgressBarCircular) rootView.findViewById(R.id.progress);
+        FloatingActionButton fab = (FloatingActionButton) rootView.findViewById(R.id.fabButton);
+        fab.setDrawableIcon(getResources().getDrawable(R.drawable.plus));
+        switch (position) {
+            case 0:
+                fab.setBackgroundColor(getResources().getColor(R.color.material_deep_teal_500));
+                progressBarCircular.setBackgroundColor(getResources().getColor(R.color.material_deep_teal_500));
+                break;
+            case 1:
+                fab.setBackgroundColor(getResources().getColor(R.color.red));
+                progressBarCircular.setBackgroundColor(getResources().getColor(R.color.red));
 
-        FrameLayout fl = new FrameLayout(getActivity());
-        fl.setLayoutParams(params);
+                break;
+            case 2:
+                progressBarCircular.setBackgroundColor(getResources().getColor(R.color.blue));
+                fab.setBackgroundColor(getResources().getColor(R.color.blue));
 
-        final int margin = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 15, getResources()
-                .getDisplayMetrics());
+                break;
+            case 3:
+                fab.setBackgroundColor(getResources().getColor(R.color.material_blue_grey_800));
+                progressBarCircular.setBackgroundColor(getResources().getColor(R.color.material_blue_grey_800));
 
-        TextView v = new TextView(getActivity());
-        params.setMargins(margin, margin, margin, margin);
-        v.setLayoutParams(params);
-        v.setLayoutParams(params);
-        v.setGravity(Gravity.CENTER);
-        v.setTextColor(Color.BLACK);
-        v.setTextSize(22);
-        v.setBackgroundResource(R.drawable.background_card);
-        v.setText("CONTENT  " + (position + 1));
+                break;
+        }
 
-        fl.addView(v);
-        return fl;
+        return rootView;
     }
 }

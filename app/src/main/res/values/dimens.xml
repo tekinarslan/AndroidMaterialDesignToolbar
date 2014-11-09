@@ -1,3 +1,9 @@
 <resources>
     <dimen name="navdrawer_width">260dp</dimen>
+
+    <dimen name="fab_size_normal">56dp</dimen>
+    <dimen name="fab_shadow_size">8dp</dimen>
+
+    <dimen name="fab_elevation_lollipop">4dp</dimen>
+
 </resources>

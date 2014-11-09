@@ -4,4 +4,76 @@
     android:id="@+id/content_frame"
     android:layout_height="match_parent">
 
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:background="@color/material_blue_grey_800"
+        android:layout_height="fill_parent">
+
+        <android.support.v7.internal.widget.TintCheckBox
+            android:id="@+id/tintcheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="128dp" />
+
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/switchcompat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tintcheckbox"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp" />
+
+        <android.support.v7.internal.widget.TintEditText
+            android:id="@+id/tintedittxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/switchcompat"
+            android:text="Sample EditText"
+            android:layout_marginTop="20dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <android.support.v7.internal.widget.TintRadioButton
+            android:id="@+id/tintradio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tintedittxt"
+            android:text="Sample Text"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true" />
+
+        <com.tekinarslan.material.sample.FloatingActionButton
+            android:id="@+id/fabButton"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="16dp"
+            android:textSize="24sp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="25dp" />
+
+
+        <com.tekinarslan.material.sample.ProgressBarCircular
+            android:id="@+id/progress"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:textSize="24sp"
+            android:layout_below="@+id/tintradio"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true" />
+
+
+    </RelativeLayout>
+
+
 </FrameLayout>

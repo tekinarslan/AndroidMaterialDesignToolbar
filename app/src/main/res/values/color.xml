@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="red">#bf360c</color>
+    <color name="ripple_red">#ffbf5232</color>
+
+    <color name="material_teal">@color/material_deep_teal_500</color>
+    <color name="ripple_material_teal">#ff149691</color>
+
     <color name="blue">#304f9f</color>
     <color name="grey">@color/material_blue_grey_800</color>
     <color name="light">@color/primary_material_light</color>
@@ -10,5 +15,6 @@
 
     <color name="windowBackgroundColor">#333333</color>
     <color name="black_translucent">#80000000</color>
+
 
 </resources>
