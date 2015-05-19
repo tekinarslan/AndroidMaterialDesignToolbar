@@ -1,14 +1,14 @@
 <android.support.v4.widget.DrawerLayout
-    android:id="@+id/drawer_layout"
     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
 
     <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
@@ -17,27 +17,29 @@
             android:background="?attr/colorPrimaryDark" />
 
         <com.tekinarslan.material.sample.SlidingTabLayout
-                android:id="@+id/sliding_tabs"
-                android:background="?attr/colorPrimaryDark"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+            android:id="@+id/sliding_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimaryDark"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" />
 
-            <android.support.v4.view.ViewPager
-                android:id="@+id/viewpager"
-                android:layout_width="match_parent"
-                android:layout_height="0px"
-                android:layout_weight="1"
-                android:background="@android:color/white" />
-        </LinearLayout>
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="1"
+            android:background="@android:color/white" />
+    </LinearLayout>
 
     <ListView
         android:id="@+id/navdrawer"
         android:layout_width="@dimen/navdrawer_width"
         android:layout_height="match_parent"
         android:layout_gravity="start"
+        android:layout_marginTop="?attr/actionBarSize"
         android:background="?attr/colorPrimaryDark"
         android:choiceMode="singleChoice"
-        android:layout_marginTop="?attr/actionBarSize"
         android:divider="@android:color/white"
         android:dividerHeight="1dp"
         android:drawSelectorOnTop="false"></ListView>
