@@ -9,7 +9,7 @@
         android:background="@color/material_blue_grey_800"
         android:layout_height="fill_parent">
 
-        <android.support.v7.internal.widget.TintCheckBox
+        <android.support.v7.widget.AppCompatCheckBox
             android:id="@+id/tintcheckbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -28,7 +28,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp" />
 
-        <android.support.v7.internal.widget.TintEditText
+        <android.support.v7.widget.AppCompatEditText
             android:id="@+id/tintedittxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -38,7 +38,7 @@
             android:layout_centerVertical="true"
             android:layout_centerHorizontal="true" />
 
-        <android.support.v7.internal.widget.TintRadioButton
+        <android.support.v7.widget.AppCompatRadioButton
             android:id="@+id/tintradio"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
