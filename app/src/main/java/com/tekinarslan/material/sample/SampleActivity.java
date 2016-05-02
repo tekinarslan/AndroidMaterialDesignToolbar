@@ -23,7 +23,7 @@ public class SampleActivity extends ActionBarActivity {
 
     private ListView mDrawerList;
     ViewPager pager;
-    private String titles[] = new String[]{"Sample Tab 1", "Sample Tab 2", "Sample Tab 3", "Sample Tab 4"
+    private String[] titles = new String[]{"Sample Tab 1", "Sample Tab 2", "Sample Tab 3", "Sample Tab 4"
             , "Sample Tab 5", "Sample Tab 6", "Sample Tab 7", "Sample Tab 8"};
     private Toolbar toolbar;
 
@@ -57,7 +57,7 @@ public class SampleActivity extends ActionBarActivity {
         String[] values = new String[]{
                 "DEFAULT", "RED", "BLUE", "MATERIAL GREY"
         };
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this,
                 android.R.layout.simple_list_item_1, android.R.id.text1, values);
         mDrawerList.setAdapter(adapter);
         mDrawerList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
