@@ -30,6 +30,11 @@ public abstract class Button extends RelativeLayout {
     OnClickListener onClickListener;
     int backgroundColor = Color.parseColor("#1E88E5");
 
+
+    // ### RIPPLE EFFECT ###
+    float x = -1, y = -1;
+    float radius = -1;
+
     public Button(Context context, AttributeSet attrs) {
         super(context, attrs);
         setDefaultProperties();
@@ -48,11 +53,6 @@ public abstract class Button extends RelativeLayout {
     }
     // Set atributtes of XML to View
 
-
-    // ### RIPPLE EFFECT ###
-
-    float x = -1, y = -1;
-    float radius = -1;
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {

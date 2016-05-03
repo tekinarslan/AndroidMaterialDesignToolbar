@@ -20,6 +20,15 @@ public class ProgressBarCircular extends RelativeLayout {
 
     int backgroundColor = Color.parseColor("#1E88E5");
 
+    float radius1 = 0;
+    float radius2 = 0;
+    int cont = 0;
+    boolean firstAnimationOver = false;
+    
+    int arcD = 1;
+    int arcO = 0;
+    float rotateAngle = 0;
+    int limite = 0;
 
     public ProgressBarCircular(Context context, AttributeSet attrs) {
         super(context, attrs);
@@ -84,11 +93,6 @@ public class ProgressBarCircular extends RelativeLayout {
 
     }
 
-    float radius1 = 0;
-    float radius2 = 0;
-    int cont = 0;
-    boolean firstAnimationOver = false;
-
     /**
      * Draw first animation of view
      *
@@ -125,11 +129,6 @@ public class ProgressBarCircular extends RelativeLayout {
                 firstAnimationOver = true;
         }
     }
-
-    int arcD = 1;
-    int arcO = 0;
-    float rotateAngle = 0;
-    int limite = 0;
 
     /**
      * Draw second animation of view
