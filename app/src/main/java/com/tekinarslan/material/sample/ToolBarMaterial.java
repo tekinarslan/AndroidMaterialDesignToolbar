@@ -25,7 +25,20 @@ public class ToolbarMaterial extends AppCompactActivity
          {
             super.onCreate(bundle);
             setContentView(R.layout.ToolbarMaterial);
+            
+            mTopToolbar = (Toolbar) findViewById(R.id.my_toolbar);
+            setSupportActionBar(mTopToolbar);
          }
+         
+         
+         
+         
+         
+             public boolean onCreateOptionsMenu(Menu menu) {
+
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
          
          
          public void Item1(View view)
