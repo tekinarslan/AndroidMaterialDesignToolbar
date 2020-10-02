@@ -7,25 +7,25 @@ Project use Appcompat library for material design.
 
 Project Contain
 ============================
-*Material Design Theme
+* Material Design Theme
 
-*Toolbar
+* Toolbar
 
-*NavigationDrawer
+* NavigationDrawer
 
-*New SlidingTabLayout
+* New SlidingTabLayout
 
-*ViewPager
+* ViewPager
 
-*Material FloatingActionButton
+* Material FloatingActionButton
 
-*Material CircularProgressBar
+* Material CircularProgressBar
 
-*SwitchCompat from Appcompat
+* SwitchCompat from Appcompat
 
-*EditText from Appcompat
+* EditText from Appcompat
 
-*Checkbox from Appcompat
+* Checkbox from Appcompat
 
 
 ![alt tag](http://www.stdroid.com/img/output_5UTjCv.gif)
