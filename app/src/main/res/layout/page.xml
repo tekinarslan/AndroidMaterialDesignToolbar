@@ -36,7 +36,7 @@
             android:text="Sample EditText"
             android:layout_marginTop="20dp"
             android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true" />
+            android:layout_centerHorizontal="true"/>
 
         <android.support.v7.widget.AppCompatRadioButton
             android:id="@+id/tintradio"
@@ -70,7 +70,11 @@
             android:layout_below="@+id/tintradio"
             android:layout_centerVertical="true"
             android:layout_marginTop="20dp"
-            android:layout_centerHorizontal="true" />
+            android:layout_centerHorizontal="true"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"/>
 
 
     </RelativeLayout>
